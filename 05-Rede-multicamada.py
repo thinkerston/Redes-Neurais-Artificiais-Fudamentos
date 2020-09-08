@@ -27,7 +27,7 @@ pesos_1 = 2 * np.random.random((3, 1)) -1
 epocas = 100000
 
 momento = 1
-taxaDeAprendizagem = 0.3
+taxaDeAprendizagem = 0.5
 
 
 for j in range(epocas):
@@ -58,4 +58,3 @@ for j in range(epocas):
 	pesos_novos_0 = camadasEntradaTransposta.dot(deltaCamadaOculta)
 	pesos_0 = (pesos_0 * momento) + (pesos_novos_0 * taxaDeAprendizagem)
 
-print('fim')
